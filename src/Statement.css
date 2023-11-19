@@ -5,9 +5,22 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
-  background: linear-gradient(to top, #3204fdba, #9907facc), url('/Users/jack/home/pd/portfolio/src/Jack-Alfonso-headshot.jpeg') no-repeat top center;
+  justify-content: center;
+  background: black;
+  /* background: linear-gradient(to top, #3204fdba, #9907facc), url('/Users/jack/home/pd/portfolio/src/Jack-Alfonso-headshot.jpeg') no-repeat top center; */
   background-position: center;
   color: white;
 }
 
+
+.stack {
+  /* background-color: white; */
+  width: 45vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+a {
+  margin: 5px
+}
