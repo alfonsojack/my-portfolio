@@ -1,9 +1,12 @@
 import './PortfolioBar.css'
+import Project from './Project'
 
 function PortfolioBar () {
   return (
     <section className='PortfolioBar'>
-      <p>hello</p>
+      <Project />
+      <Project />
+      <Project />
     </section>
   )
 }
