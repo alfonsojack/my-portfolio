@@ -5,20 +5,31 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  background: black;
+  justify-content: space-between;
+  background: white;
   /* background: linear-gradient(to top, #3204fdba, #9907facc), url('/Users/jack/home/pd/portfolio/src/Jack-Alfonso-headshot.jpeg') no-repeat top center; */
   background-position: center;
-  color: white;
+  color: black;
+  border-right: 1px gray solid;
 }
 
 
 .stack {
   /* background-color: white; */
-  width: 45vw;
+  width: 50vw;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-self: flex-end;
+}
+
+.summary {
+  width: 40vw;
+}
+
+.intro {
+  text-align: center;
+  flex-basis: auto;
 }
 
 a {
