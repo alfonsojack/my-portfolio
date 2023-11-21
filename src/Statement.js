@@ -5,8 +5,8 @@ function Statement () {
     <div className='img-overlay'>
     <div className='Statement'>
       <div className='intro'>
-      <h1>Hi. My name is Jack Alfonso</h1>
-      <h2>Frontend Developer</h2>
+      <h1 className='name'>Jack Alfonso</h1>
+      <h2 className='dev'>Frontend Developer</h2>
       </div>
       <div className='summary'>
       <p >I'm a creative problem solver with a passion for continuous learning and collaboration.</p>

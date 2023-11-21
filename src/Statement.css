@@ -13,6 +13,17 @@
   border-right: 1px gray solid;
 }
 
+.name {
+  font: 'Roboto';
+  font-size: 4rem;
+  margin-bottom: 0;
+}
+
+.dev {
+  font-family: 'Roboto', sans-serif;
+  font-size: 2rem;
+  margin: 0;
+}
 
 .stack {
   /* background-color: white; */
@@ -25,6 +36,8 @@
 
 .summary {
   width: 40vw;
+  font-size: 1.5em;
+  margin: 0;
 }
 
 .intro {
