@@ -17,7 +17,9 @@
 .slide {
   display: inline-block;
   width: 100%;
-  border-bottom: 1px gray solid
+  border-bottom: 1px gray solid;
+  object-fit: cover;
+  max-height: 100%;
 }
 
 /* Buttons */
