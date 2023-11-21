@@ -1,13 +1,9 @@
 import './Project.css'
 import { useState, useEffect, useRef } from 'react'
-import matthews1 from './matthews1.png';
-import matthews2 from './matthews2.png';
-import matthews3 from './matthews3.png';
-import matthews4 from './matthews4.png'
 
 
-function Project() {
-  const slides = [matthews1, matthews3, matthews4];
+
+function Project({slides, title}) {
   const delay = 2500;
 
   const [index, setIndex] = useState(0);
@@ -36,7 +32,7 @@ function Project() {
 
   return (
     <div className="slideshow">
-        <h2>Matthews Poetry Generator</h2>
+        <h2>{title}</h2>
 
             <div
         className="slideshowSlider"
