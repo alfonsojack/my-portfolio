@@ -41,10 +41,31 @@
 }
 
 .slideshowDot.active {
-  background-color: #6a0dad;
+  background-color: black;
 }
 
 h2 {
-  font-size: 15px;
+  font-size: 1rem;
   color: black
+}
+
+.project-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 1rem;
+  padding-right: 1em;
+}
+
+.icon-information {
+  height: 1.2rem;
+  justify-self: flex-end;
+}
+
+.primary {
+  fill: black;
+}
+
+.secondary {
+  fill: white;
 }
