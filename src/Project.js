@@ -1,19 +1,31 @@
 import './Project.css'
 import { useState, useEffect, useRef } from 'react'
+import { Link } from 'react-router-dom';
 
 
 
-function Project({slides, title}) {
-  const delay = 2500;
-
+function Project({slides, title, summary, githubRepo, deployLink}) {
   const [index, setIndex] = useState(0);
+  const [moreInfo, setMoreInfo] = useState(false);
   const timeoutRef = useRef(null);
+
+  const delay = 2500;
 
   function resetTimeout() {
     if (timeoutRef.current) {
       clearTimeout(timeoutRef.current);
     }
   }
+
+  // const handleMoreInfoClick = () => {
+  //   setMoreInfo(true);
+  // };
+
+  const handleMoreInfoClick = () => {
+    setMoreInfo((prevMoreInfo) => !prevMoreInfo);
+  };
+
+
 
   useEffect(() => {
     resetTimeout();
@@ -30,11 +42,17 @@ function Project({slides, title}) {
     };
   }, [index]);
 
+  const navigateToGitHub = () => {
+    window.location.href = githubRepo; 
+  };
+
   return (
+    <div>
+  {!moreInfo ? (
     <div className="slideshow">
         <div className='project-header'>
         <h2>{title}</h2>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="icon-information"><path className="primary" d="M12 2a10 10 0 1 1 0 20 10 10 0 0 1 0-20z"/><path className="secondary" d="M11 12a1 1 0 0 1 0-2h2a1 1 0 0 1 .96 1.27L12.33 17H13a1 1 0 0 1 0 2h-2a1 1 0 0 1-.96-1.27L11.67 12H11zm2-4a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="icon-information" onClick={handleMoreInfoClick}><path className="primary" d="M12 2a10 10 0 1 1 0 20 10 10 0 0 1 0-20z"/><path className="secondary" d="M11 12a1 1 0 0 1 0-2h2a1 1 0 0 1 .96 1.27L12.33 17H13a1 1 0 0 1 0 2h-2a1 1 0 0 1-.96-1.27L11.67 12H11zm2-4a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/></svg>
         </div>
             <div
         className="slideshowSlider"
@@ -59,7 +77,28 @@ function Project({slides, title}) {
           ></div>
         ))}
       </div>
+    </div> ) : 
+    <div className='slideshow moreInfo'>
+      <div className='project-header'>
+      <h2>{title}</h2>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="icon-home" onClick={handleMoreInfoClick}><path className="primary" d="M9 22H5a1 1 0 0 1-1-1V11l8-8 8 8v10a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1v-4a1 1 0 0 0-1-1h-2a1 1 0 0 0-1 1v4a1 1 0 0 1-1 1zm3-9a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"/><path className="secondary" d="M12.01 4.42l-8.3 8.3a1 1 0 1 1-1.42-1.41l9.02-9.02a1 1 0 0 1 1.41 0l8.99 9.02a1 1 0 0 1-1.42 1.41l-8.28-8.3z"/></svg>
+      </div>
+      <div className='project-summary'>
+      <h2>Summary</h2>
+      <p className='project-summary'>{summary}</p>
+      </div>
+      <div className='project-summary'>
+      <h2>Tech Stack</h2>
+      <p className='project-summary'>React, React Router, HTML, CSS, Github Issues, Cypress E2E Testing, Vercel</p>
+      </div>
+      <div className='project-buttons'>
+        <Link to={githubRepo} target="_blank" rel="noopener noreferrer">GitHub Repo</Link>
+        <Link to={deployLink} target="_blank" rel="noopener noreferrer">Deployed Site</Link>
+        <Link>Learn More</Link>
+      </div>
     </div>
+    }
+</div>
   )
 }
 
