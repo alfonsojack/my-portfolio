@@ -3,10 +3,19 @@
 .slideshow {
   margin: 5px auto;
   overflow: hidden;
-  max-width: 40vw;
+  width: 40vw;
+  /* min-height: 50vh; */
   border: 1px solid black;
   border-radius: 5px;
   background: white;
+}
+
+.moreInfo {
+  display: flex;
+  flex-direction: column;
+  min-height: 50vh;
+  overflow: auto;
+  justify-content: space-between;
 }
 
 .slideshowSlider {
@@ -41,10 +50,53 @@
 }
 
 .slideshowDot.active {
-  background-color: #6a0dad;
+  background-color: black;
 }
 
 h2 {
-  font-size: 15px;
+  font-size: 1rem;
   color: black
+}
+
+.project-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 1rem;
+  padding-right: 1em;
+}
+
+.icon-information, .icon-home {
+  height: 1.2rem;
+  justify-self: flex-end;
+}
+
+.icon-information:hover, .icon-home:hover {
+  cursor: pointer;
+}
+
+.primary {
+  fill: black;
+}
+
+.secondary {
+  fill: white;
+}
+
+.project-summary {
+  width: 30vw;
+  align-self: center;
+  margin: 0;
+  font-size: 1rem;
+}
+
+.project-buttons {
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  padding: .5rem;
+  margin: .5rem;
 }
