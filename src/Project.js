@@ -4,10 +4,12 @@ import { Link } from 'react-router-dom';
 
 
 
-function Project({slides, title, summary, githubRepo, deployLink}) {
+function Project({slides, title, summary, githubRepo, deployLink, stack}) {
   const [index, setIndex] = useState(0);
   const [moreInfo, setMoreInfo] = useState(false);
   const timeoutRef = useRef(null);
+
+  // const joinedStack = stack.join(, )
 
   const delay = 2500;
 
@@ -89,7 +91,7 @@ function Project({slides, title, summary, githubRepo, deployLink}) {
       </div>
       <div className='project-summary'>
       <h2>Tech Stack</h2>
-      <p className='project-summary'>React, React Router, HTML, CSS, Github Issues, Cypress E2E Testing, Vercel</p>
+      <p className='project-summary'>{stack.join(', ')}</p>
       </div>
       <div className='project-buttons'>
         <Link to={githubRepo} target="_blank" rel="noopener noreferrer">GitHub Repo</Link>
