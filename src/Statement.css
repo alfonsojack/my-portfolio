@@ -26,12 +26,26 @@
 }
 
 .stack {
-  /* background-color: white; */
-  width: 50vw;
+  width: 50vw; /* Adjust the width as needed */
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-end; /* Align items to the end to start the animation from the right */
   align-self: flex-end;
+  overflow: hidden;
+}
+
+.scroll-wrapper {
+  display: flex;
+  animation: scroll 12s linear infinite;
+}
+
+/* Keyframes for the scrolling animation */
+@keyframes scroll {
+  0% {
+    transform: translateX(-100%); /* Start from the right */
+  }
+  100% {
+    transform: translateX(100%); /* Move to the left completely */
+  }
 }
 
 .summary {
@@ -47,4 +61,13 @@
 
 a {
   margin: 5px;
+}
+
+.icon-mail {
+  height: 3rem
+}
+
+.label {
+  margin: 0;
+  font-size: 1.5rem;
 }
