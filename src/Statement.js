@@ -8,7 +8,6 @@ function Statement () {
       <div className='intro'>
       <h1 className='name'>Jack Alfonso</h1>
       <h2 className='dev'>Frontend Developer</h2>
-      </div>
       <div className='summary'>
       <p >I'm a creative problem solver with a passion for continuous learning and collaboration.</p>
       {/* <button>
@@ -16,6 +15,10 @@ function Statement () {
         <p className='label'>Contact Me</p>
       </button> */}
       </div>
+      </div>
+      {/* <div className='summary'>
+      <p >I'm a creative problem solver with a passion for continuous learning and collaboration.</p>
+      </div> */}
       <div className='stack'>  
       <div className='scroll-wrapper'>
         <a href="https://reactjs.org/" target="_blank"><img src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB" alt="React"  /></a>  
