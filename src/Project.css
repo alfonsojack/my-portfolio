@@ -5,9 +5,10 @@
   overflow: hidden;
   width: 40vw;
   /* min-height: 50vh; */
-  border: 1px solid black;
+  border: 2px outset hsl(209, 61%, 16%);
   border-radius: 5px;
-  background: white;
+  background: hsl(209, 61%, 16%);
+  /* box-sizing: border-box; */
 }
 
 .moreInfo {
@@ -26,9 +27,11 @@
 .slide {
   display: inline-block;
   width: 100%;
-  border-bottom: 1px gray solid;
   object-fit: cover;
   max-height: 100%;
+  /* border-top: 2px inset white;
+  border-bottom: 2px inset white; */
+  box-sizing: border-box;
 }
 
 /* Buttons */
@@ -46,16 +49,16 @@
   cursor: pointer;
   margin: 10px;
 
-  background-color: #c4c4c4;
+  background-color: hsl(212, 33%, 89%)
 }
 
 .slideshowDot.active {
-  background-color: black;
+  background-color: hsl(199, 84%, 55%);
 }
 
 h2 {
   font-size: 1rem;
-  color: black
+  color: hsl(210, 36%, 96%)
 }
 
 .project-header {
@@ -76,11 +79,12 @@ h2 {
 }
 
 .primary {
-  fill: black;
+  fill: hsl(210, 36%, 96%);
 }
 
 .secondary {
-  fill: white;
+  fill: hsl(209, 61%, 16%)
+
 }
 
 .project-summary {
@@ -88,6 +92,7 @@ h2 {
   align-self: center;
   margin: 0;
   font-size: 1rem;
+  color:  hsl(210, 36%, 96%);
 }
 
 .project-buttons {
