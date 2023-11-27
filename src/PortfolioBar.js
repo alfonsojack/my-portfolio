@@ -12,9 +12,22 @@ import rancid1 from './rancid1.png'
 import rancid2 from './rancid2.png'
 import rancid3 from './rancid3.png'
 import rancid4 from './rancid4.png'
+import News1 from './News1.png'
+import News2 from './News2.png'
+import News3 from './News3.png'
+import News4 from './News4.png'
+import News5 from './News5.png'
 
 function PortfolioBar () {
   const projects = [
+    {
+      title: 'React News Feed',
+      slides: [News1, News2, News3, News4, News5], 
+      summary: "Matthews allows users to create new poetry by combining existing poems. They can search through a poetry database and combine a poem of their choosing with another poem of equal length or they can click a button that mixes together a random assortment of poems in the database.",
+      stack: ['React', 'React Router', 'HTML', 'CSS', 'Github Issues', 'Cypress E2E Testing', 'Vercel'],
+      githubRepo: 'https://github.com/alfonsojack/matthews',
+      deployLink: 'https://matthews-two.vercel.app/'
+    }, 
     {
       title: 'Matthews Poetry Generator',
       slides: [matthews1, matthews2, matthews3, matthews4], 
@@ -38,7 +51,7 @@ function PortfolioBar () {
       stack: ['React', 'React Router', 'HTML', 'CSS', 'Github Issues', 'Cypress E2E Testing', 'Vercel'],
       githubRepo: 'https://github.com/alfonsojack/Rancid_Tomatillos',
       deployLink: 'https://rancid-tomatillos-mu.vercel.app/'
-    }
+    }, 
   ]
 
   return (
