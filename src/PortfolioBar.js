@@ -56,6 +56,7 @@ function PortfolioBar () {
 
   return (
     <section className='PortfolioBar'>
+      {/* <h1 className='recent-header'>Recent Projects</h1> */}
       {projects.map((project) => (
         <Project title={project.title} summary={project.summary} slides={project.slides} stack={project.stack} githubRepo={project.githubRepo} deployLink={project.deployLink}/>
       ))}

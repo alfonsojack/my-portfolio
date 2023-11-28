@@ -82,9 +82,13 @@ h2 {
   fill: hsl(210, 36%, 96%);
 }
 
+.icon-information:hover .primary {
+  fill: hsl(199, 84%, 55%);
+  transition: .3s
+}
+
 .secondary {
   fill: hsl(209, 61%, 16%)
-
 }
 
 .project-summary {
@@ -108,4 +112,9 @@ a {
   margin: .5rem;
   color:  hsl(210, 36%, 96%);
   /* text-decoration: none; */
+}
+
+.recent-header {
+  margin-top: 6vh;
+  font-size: 2rem;
 }

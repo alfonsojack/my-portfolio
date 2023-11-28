@@ -1,5 +1,6 @@
 import './Statement.css'
 import { Link } from 'react-router-dom'
+import Contact from './Contact.js'
 
 function Statement () {
   return (
@@ -10,11 +11,8 @@ function Statement () {
       <h2 className='dev'>Frontend Developer</h2>
       <div className='summary'>
       <p >I'm a creative problem solver with a passion for continuous learning and collaboration.</p>
-      {/* <button>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="icon-mail"><path className="mail-primary" d="M22 8.62V18a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V8.62l9.55 4.77a1 1 0 0 0 .9 0L22 8.62z"/><path className="mail-secondary" d="M12 11.38l-10-5V6c0-1.1.9-2 2-2h16a2 2 0 0 1 2 2v.38l-10 5z"/></svg>
-        <p className='label'>Contact Me</p>
-      </button> */}
       </div>
+      <Contact/>
       </div>
       {/* <div className='summary'>
       <p >I'm a creative problem solver with a passion for continuous learning and collaboration.</p>
