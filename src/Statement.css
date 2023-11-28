@@ -6,13 +6,13 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  border-right: 1px gray solid;
-
+  /* border-right: 1px gray solid; */
+  background: rgb(21, 37, 45);
   /* background: linear-gradient(to bottom, hsl(209, 61%, 16%), hsl(210, 22%, 49%)); */
   /* background: linear-gradient(to top, #3204fdba, #9907facc), url('/Users/jack/home/pd/portfolio/src/Jack-Alfonso-headshot.jpeg') no-repeat top center; */
   background-position: center;
   /* color: hsl(210, 36%, 96%); */
-  color: hsl(209, 61%, 16%);
+  color: rgb(255, 234, 219);;;
   /* border-right: 1px gray solid; */
 }
 
@@ -27,7 +27,7 @@
   font-family: 'Roboto', sans-serif;
   font-size: 2rem;
   margin: 0;
-  color: hsl(209, 61%, 16%)
+  color:  #fc5200;
   ;
 }
 

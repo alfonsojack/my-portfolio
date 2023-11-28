@@ -4,14 +4,16 @@ form {
   justify-content: center;
   align-items: center;
   width: 40vw;
-  border: 2px outset hsl(209, 61%, 16%);
-  border-radius: 5px;
-  background: hsl(209, 61%, 16%);
+  border: 2px outset  rgb(255, 234, 219);;;;
+  border-radius: 10px;
+  background: none;
   height: 45vh;
 }
 
 label {
-  color: hsl(210, 36%, 96%)
+  color:rgb(255, 234, 219);
+  font-size: 1.2rem;
+  padding-bottom: .5rem;
 }
 
 input {
@@ -31,14 +33,26 @@ input {
 }
 
 textarea {
-  width: 30vw;
+  width: 20vw;
+}
+
+input, textarea {
+  background-color: rgb(255, 234, 219);
+  border-radius: 10px;
 }
 
 .btnsend {
-  margin: 1rem
+  margin: 1rem;
+  background-color: #fc5200;
+  height: 2rem;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  color: rgb(21, 37, 45)
 }
 
 .form-title {
-  color: hsl(210, 36%, 96%);
+  color: rgb(255, 234, 219);
   font-size: 1.5rem;
+  margin-top: 2rem;
 }
