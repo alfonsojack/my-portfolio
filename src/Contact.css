@@ -43,12 +43,27 @@ input, textarea {
 
 .btnsend {
   margin: 1rem;
-  background-color: #fc5200;
+  background: none;
+  /* background-color: #fc5200; */
   height: 2rem;
-  border: none;
+  border: 2px outset #fc5200;
   border-radius: 10px;
-  font-size: 1.5rem;
+  font-size: 1rem;
+  color: #fc5200;;
+  /* color: rgb(21, 37, 45) */
+}
+
+.btnsend:hover {
+  cursor: pointer;
+  background-color: #fc5200;
+  border: none;
+  transition: .3s;
   color: rgb(21, 37, 45)
+}
+
+.btnsend:active {
+  transform: scale(1.1);
+  transition: .3s;
 }
 
 .form-title {
