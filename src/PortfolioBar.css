@@ -7,5 +7,5 @@
   align-items: center;
   justify-content: center;
   height: max-content;
-  background: linear-gradient(to bottom right, hsl(211, 27%, 70%), hsl(212, 33%, 89%));
+  background-color: rgb(255, 234, 219);;
 }
