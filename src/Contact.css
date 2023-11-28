@@ -1,0 +1,44 @@
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40vw;
+  border: 2px outset hsl(209, 61%, 16%);
+  border-radius: 5px;
+  background: hsl(209, 61%, 16%);
+  height: 45vh;
+}
+
+label {
+  color: hsl(210, 36%, 96%)
+}
+
+input {
+  width: 10vw;
+}
+
+.contained {
+  display: flex;
+  justify-content: space-around
+}
+
+.input-unit {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+  align-items: center;
+}
+
+textarea {
+  width: 30vw;
+}
+
+.btnsend {
+  margin: 1rem
+}
+
+.form-title {
+  color: hsl(210, 36%, 96%);
+  font-size: 1.5rem;
+}
