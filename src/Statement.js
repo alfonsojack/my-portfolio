@@ -12,6 +12,11 @@ function Statement () {
       <div className='summary'>
       <p >I'm a creative problem solver with a passion for continuous learning and collaboration.</p>
       </div>
+      <div className='buttoncont'>
+        <Link className='a' to='https://docs.google.com/document/d/1cRiINs9tj3WW0LbQe9Zp8kHi4L_X-Qas6o2lbzuFcqI/edit?usp=sharing' target="_blank" rel="noopener noreferrer">Resume</Link>
+        <Link className='a'>About Me</Link>
+        <Link className='a' to='https://www.linkedin.com/in/jonathan-jack-alfonso/' target="_blank" rel="noopener noreferrer">LinkedIn</Link>
+      </div>
       <Contact/>
       </div>
       {/* <div className='summary'>

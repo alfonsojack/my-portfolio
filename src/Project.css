@@ -78,9 +78,20 @@ h2 {
   cursor: pointer;
 }
 
-.primary {
+.primary, .homeprimary, .homesecondary {
   fill: rgb(207, 215, 214);
 }
+
+.icon-home:hover .homeprimary  {
+  fill: #fc5200;
+  transition: .3s
+}
+
+.icon-home:hover .homesecondary {
+  fill: #fc5200;
+  transition: .3s
+}
+
 
 .icon-information:hover .primary {
   fill: #fc5200;
@@ -94,9 +105,11 @@ h2 {
 .project-summary {
   width: 30vw;
   align-self: center;
+  text-align: start;
   margin: 0;
   font-size: 1rem;
   color: rgb(255, 234, 219);
+
 }
 
 .project-buttons {
@@ -107,14 +120,40 @@ h2 {
   text-decoration: none;
 }
 
-a {
+.a {
   padding: .5rem;
   margin: .5rem;
-  color:  #fc5200;
-  /* text-decoration: none; */
+  background: none;
+  /* background-color: #fc5200; */
+  /* height: 2rem; */
+  border: 2px outset #fc5200;
+  border-radius: 10px;
+  font-size: 1rem;
+  color: #fc5200;
+  text-decoration: none;
 }
+
+
+.a:hover {
+  cursor: pointer;
+  background-color: #fc5200;
+  border: none;
+  transition: .3s;
+  color: rgb(21, 37, 45)
+}
+
+.a:active {
+  transform: scale(1.1);
+  transition: .3s;
+}
+
 
 .recent-header {
   margin-top: 6vh;
   font-size: 2rem;
+}
+
+.head {
+  font-weight: 100;
+  margin-bottom: .1rem;
 }
