@@ -3,21 +3,25 @@ form {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 40vw;
+  width: 35vw;
   border: 2px outset  rgb(255, 234, 219);;;;
   border-radius: 10px;
   background: none;
-  height: 45vh;
+  height: 40vh;
 }
 
 label {
   color:rgb(255, 234, 219);
   font-size: 1.2rem;
-  padding-bottom: .5rem;
+  /* padding-bottom: .5rem; */
+  font-weight: 100;
+  margin-bottom: .1rem;
+  
 }
 
 input {
   width: 10vw;
+  margin-bottom: 0;
 }
 
 .contained {
@@ -34,6 +38,7 @@ input {
 
 textarea {
   width: 20vw;
+  margin-bottom: .4rem;
 }
 
 input, textarea {
