@@ -1,11 +1,13 @@
 .PortfolioBar {
   /* background: linear-gradient(to top, #3204fdba, #9907facc); */
   padding-left: 50vw;
-  width: 100vw;
+  width: 50vw;
+  padding-right: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   height: max-content;
-  background-color: rgb(255, 234, 219);;
+  /* box-sizing: border-box; */
+  background-color: rgb(255, 234, 219);
 }
