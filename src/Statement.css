@@ -142,9 +142,24 @@ a:hover .linkprimary {
 }
 
 .headshot {
-  height: 50vh;
+  /* height: 50vh; */
+  width: 26vw;
   border-radius: 100%;
   border: 2px outset rgb(255, 234, 219);
   margin-top: .5rem;
   margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .buttoncont {
+    flex-direction: column;
+  }
+
+.project-buttons {
+  flex-direction: column;
+}
+  
+  /* .dev {
+    font-size: 1.5rem;
+  } */
 }
