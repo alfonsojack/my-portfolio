@@ -6,6 +6,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  box-sizing: border-box;
   /* border-right: 1px gray solid; */
   background: rgb(21, 37, 45);
   /* background: linear-gradient(to bottom, hsl(209, 61%, 16%), hsl(210, 22%, 49%)); */
@@ -41,7 +42,7 @@
 
 .scroll-wrapper {
   display: flex;
-  animation: scroll 12s linear infinite;
+  animation: scroll 15s linear infinite;
 }
 
 /* Keyframes for the scrolling animation */
@@ -87,5 +88,63 @@ a {
 
 .buttoncont {
   display: flex;
+  margin-bottom: 1rem;
+}
+
+.tech {
+  display: flex;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.img {
+  border: 2px outset rgb(255, 234, 219);
+}
+
+#minor {
+  color: rgb(255, 234, 219);
+  border-color: rgb(255, 234, 219);
+}
+
+#minor:hover {
+  background-color: rgb(255, 234, 219);
+  color:  rgb(21, 37, 45);
+}
+
+.icon-mail {
+  height: 2rem;
+  padding-left: .5rem;
+  
+}
+
+.icon-user-add {
+  height: 2rem;
+  padding-left: .5rem;
+}
+
+.linkprimary {
+  fill: rgb(255, 234, 219);
+}
+
+.mailprimary, .mailsecondary {
+  fill: #fc5200;
+}
+
+a:hover .mailprimary {
+  fill:  rgb(21, 37, 45);
+}
+
+a:hover .linkprimary {
+  fill:  rgb(21, 37, 45);
+}
+
+.headshot {
+  height: 50vh;
+  border-radius: 100%;
+  border: 2px outset rgb(255, 234, 219);
+  margin-top: .5rem;
   margin-bottom: 1rem;
 }
